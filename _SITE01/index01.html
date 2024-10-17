@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Alinhado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        label {
+            width: 100px; /* Largura fixa para o label */
+            margin-right: 10px; /* Espaço entre o label e o input */
+            font-weight: bold;
+        }
+
+        input, 
+        select, 
+        textarea {
+            padding: 8px;
+            font-size: 16px;
+            width: 100%; /* Para ocupar a largura restante */
+        }
+
+        /* Ajustes para inputs do tipo checkbox e radio */
+        .form-group input[type="checkbox"],
+        .form-group input[type="radio"] {
+            width: auto; /* Para não ocupar toda a largura */
+            margin-right: 5px; /* Espaço entre checkbox/radio e o label */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label>Text:</label>
+            <input type="text"/>
+        </div>
+        <div class="form-group">
+            <label>Number:</label>
+            <input type="number" min="0" step="5" max="99"/>
+        </div>
+        <div class="form-group">
+            <label>Range:</label>
+            <input type="range" min="0" max="100" value="60"/>
+        </div>
+        <div class="form-group">
+            <label>Color:</label>
+            <input type="color"/>
+        </div>
+        <div class="form-group">
+            <label>E-mail:</label>
+            <input type="email"/>
+        </div>
+        <div class="form-group">
+            <label>URL:</label>
+            <input type="url"/>
+        </div>
+        <div class="form-group">
+            <label>Button:</label>
+            <input type="submit" value="Enviar"/>
+        </div>
+        <div class="form-group">
+            <label>Checkbox:</label>
+            <input type="checkbox"/>
+        </div>
+        <div class="form-group">
+            <label>Radio:</label>
+            <input type="radio" name="radio-group"/>
+            <input type="radio" name="radio-group"/>
+        </div>
+        <div class="form-group">
+            <label>Hidden:</label>
+            <input type="hidden"/>
+        </div>
+        <div class="form-group">
+            <label>File:</label>
+            <input type="file" multiple/>
+        </div>
+        <div class="form-group">
+            <label>Search:</label>
+            <input type="search"/>
+        </div>
+        <div class="form-group">
+            <label>Date:</label>
+            <input type="date"/>
+        </div>
+    </form>
+</body>
+</html>
