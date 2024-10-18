@@ -54,3 +54,34 @@ function editUser(button) {
 
     row.remove();
 }
+
+document.getElementById('downloadPDF').addEventListener('click', function() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    doc.setFontSize(18);
+    doc.text('Relatório de Dados Pessoais', 14, 22);
+
+    doc.setFontSize(12);
+    doc.text('Nome', 14, 32);
+    doc.text('Email', 64, 32);
+    doc.text('Idade', 144, 32);
+
+    const tableBody = document.querySelectorAll('#usersTable tbody tr');
+    let yOffset = 42; // Posição inicial no eixo Y
+
+    tableBody.forEach(function(row) {
+        const name = row.children[0].textContent;
+        const email = row.children[1].textContent;
+        const age = row.children[2].textContent;
+
+        doc.text(name, 14, yOffset);
+        doc.text(email, 64, yOffset);
+        doc.text(age, 144, yOffset);
+
+        yOffset += 10; // Incrementa a posição Y para a próxima linha
+    });
+
+    // Baixar o PDF
+    doc.save('relatorio-dados-pessoais.pdf');
+});
