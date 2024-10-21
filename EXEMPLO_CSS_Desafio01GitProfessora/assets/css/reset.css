@@ -1,0 +1,12 @@
+/* Importa a fonte a ser utilizada*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Aplica estilos a todos os elementos do documento (usando o seletor universal '*') */
+* {
+    /* Define a fonte padrão como 'Raleway', se a fonte 'Raleway' não estiver disponível, o navegador usará uma fonte sans-serif padrão */
+    font-family: 'Raleway', sans-serif;
+    /* Define o modelo de dimensionamento da caixa como 'border-box', isso significa que o padding e as bordas são incluídos no tamanho total do elemento */
+    box-sizing: border-box;
+    /* Define a margem superior, direita, inferior e esquerda como 0; isso garante que os elementos não tenham margens padrão e evita problemas de espaçamento */
+    margin: 0;
+}

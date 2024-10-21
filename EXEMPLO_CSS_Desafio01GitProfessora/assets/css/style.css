@@ -1,0 +1,253 @@
+/* Importa o arquivo reset.css para garantir um estilo consistente em todos os navegadores */
+@import url('reset.css');
+
+/* Define a cor de fundo do corpo como preta */
+body {
+    background-color: black;
+}
+
+/* Estilos para elementos h2 */
+h2 {
+    /* Define o tamanho da fonte como 2rem */
+    font-size: 2rem;
+    /* Define a cor da fonte como azul claro */
+    color: #33A8DB;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+    /* Define o espaçamento entre as letras como 4px */
+    letter-spacing: 4px;
+    /* Converte o texto para letras maiúsculas */
+    text-transform: uppercase;
+    /* Define a margem inferior como 24px */
+    margin-bottom: 24px;
+}
+
+/* Define a cor da fonte do texto como branca */
+p {
+    color: white;
+}
+
+/* Estilos para seções */
+section {
+    /* Define a margem superior e inferior como 100px e centraliza o conteúdo horizontalmente */
+    margin: 100px auto;
+}
+
+/* Estilos para a classe banner */
+.banner {
+    /* Define a imagem de fundo com um gradiente e uma imagem */
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+    /* Define o tamanho da imagem de fundo para cobrir todo o elemento */
+    background-size: cover;
+    /* Desabilita a repetição da imagem de fundo */
+    background-repeat: no-repeat;
+    /* Define a altura do elemento como 600px */
+    height: 600px;
+    /* Define o padding superior como 60px */
+    padding-top: 60px;
+    /* Define uma borda inferior sólida azul claro com 1px de espessura e opacidade de 80% */
+    border-bottom: 1px solid #33A8DB80;
+}
+
+/* Estilos para a classe banner-content dentro da classe banner */
+.banner .banner-content {
+    /* Define a cor da fonte como branca */
+    color: white;
+     /* Define a largura do elemento como 600px */
+    width: 600px;
+    /* Centraliza o conteúdo horizontalmente */
+    margin: auto;
+    /* Alinha o texto ao centro */
+    text-align: center;
+}
+
+/* Estilos para elementos h1 dentro da classe banner */
+.banner h1 {
+    /* Define o tamanho da fonte como 2.5rem */
+    font-size: 2.5rem;
+    /* Define o peso da fonte como 900 */
+    font-weight: 900;
+    /* Converte o texto para letras maiúsculas */
+    text-transform: uppercase;
+    /* Define a cor da fonte como transparente */
+    color: transparent;
+    /* Define um gradiente de fundo */
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    /* Define o corte do fundo para o texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/* Estilos para textos dentro da classe banner */
+.banner p {
+    /* Define o tamanho da fonte como 1.25rem */
+    font-size: 1.25rem;
+    /* Define a margem superior e inferior como 16px e 24px, respectivamente */
+    margin: 16px 0 24px;
+}
+
+/* Estilos para a classe logo dentro da classe banner */
+.banner .logo {
+    /* Define a cor de fundo com opacidade de 20% */
+    background-color: rgba(0, 0, 0, .2);
+    /* Define a altura e largura do elemento como 260px */
+    height: 260px;
+    width: 260px;
+    /* Centraliza o conteúdo horizontalmente */
+    margin: auto;
+    /* Define um raio de borda circular */
+    border-radius: 50%;
+    /* Define o padding como 16px */
+    padding: 16px;
+    /* Define a margem inferior como 16px */
+    margin-bottom: 16px;
+}
+
+/* Estilos para imagens dentro da classe logo */
+.banner .logo img {
+     /* Centraliza o conteúdo horizontalmente */
+    margin: auto;
+    /* Define a largura e altura da imagem como 100% do elemento pai */
+    width: 100%;
+    height: 100%;
+    /* Define o modo de ajuste da imagem para "conter" */
+    object-fit: contain;
+}
+
+/* Estilos para botões dentro da classe banner-content */
+.banner .banner-content button {
+    /* Define a cor da fonte como azul claro */
+    color: #31A8DD;
+    /* Define o tamanho da fonte como 1rem */
+    font-size: 1rem;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+    /* Define o padding como 16px para a esquerda e direita e 32px para cima e baixo */
+    padding: 16px 32px;
+    /* Converte o texto para letras maiúsculas */
+    text-transform: uppercase;
+    /* Define o espaçamento entre as letras como 4px */
+    letter-spacing: 4px;
+    /* Define a cor de fundo como transparente */
+    background-color: transparent;
+    /* Define uma imagem de borda com um gradiente */
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    /* Define o fatiamento da imagem de borda */
+    border-image-slice: 10;
+    /* Define um raio de borda arredondado */
+    border-radius: 30px;
+}
+
+/* Estilos para o elemento com o id course-content */
+#course-content {
+    /* Define a largura do elemento como 800px */
+    width: 800px;
+    /* Alinha o texto ao centro */
+    text-align: center;
+}
+
+/* Estilos para a classe modules-list dentro do elemento course-content */
+#course-content .modules-list {
+    /* Define a margem superior e inferior como 24px */
+    margin: 24px 0;
+}
+
+/* Estilos para a classe module dentro da classe modules-list */
+#course-content .modules-list .module {
+    /* Define a cor da fonte como branca */
+    color: white;
+    /* Define a largura do elemento como 530px */
+    width: 530px;
+    /* Centraliza o conteúdo horizontalmente */
+    margin: 0 auto 24px;
+    /* Define uma borda sólida azul claro com 1px de espessura */
+    border: 1px solid #33A8DB;
+    /* Define a cor de fundo como cinza escuro */
+    background-color: #252525;
+    /* Define o padding como 16px */
+    padding: 16px;
+    /* Define um raio de borda arredondado */
+    border-radius: 100px;
+    /* Define uma sombra interna */
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+/* Estilos para spans dentro da classe module */
+#course-content .modules-list .module span {
+    /*Define a cor da fonte*/
+    color: #33A8DB;
+}
+
+/* Estilos para o elemento com o id transform-world */
+#transform-world {
+    /* Define a altura do elemento como 560px */
+    height: 560px;
+    /* Define o tamanho da imagem de fundo para cobrir todo o elemento */
+    background-size: cover;
+    /* Define a imagem de fundo */
+    background-image: url("../images/woman-code.png");
+    /* Define o estilo de anexo da imagem de fundo como fixo */
+    background-attachment: fixed;
+    /* Define uma borda superior sólida azul claro com 1px de espessura e opacidade de 80% */
+    border-top: 1px solid #33A8DB80;
+    /* Define uma borda inferior sólida azul claro com 1px de espessura e opacidade de 80% */
+    border-bottom: 1px solid #33A8DB80;
+    /* Define o padding como 200px */
+    padding: 200px;
+}
+
+/* Estilos para texto dentro do elemento transform-world */
+#transform-world p {
+    /* Define o peso da fonte como 900 */
+    font-weight: 900;
+    /* Define o tamanho da fonte como 2.5rem */
+    font-size: 2.5rem;
+    /* Converte o texto para letras minúsculas */
+    text-transform: lowercase;
+    /* Define a largura máxima do texto como 250px */
+    max-width: 250px;
+    /* Define uma sombra de texto */
+    text-shadow: 3px 2px #33A8DB;
+}
+
+/* Estilos para o elemento com o id professional-challenges */
+#professional-challenges {
+    /* Alinha o texto ao centro */
+    text-align: center;
+    /* Define a largura do elemento como 800px */
+    width: 800px;
+}
+
+/* Estilos para imagens dentro do elemento professional-challenges */
+#professional-challenges img {
+    /* Define a margem superior e inferior como 32px */
+    margin: 32px 0;
+}
+
+/* Estilos para o elemento footer */
+footer {
+    /* Define o padding como 60px para a esquerda e direita e 0 para cima e baixo */
+    padding: 60px 0;
+    /* Alinha o texto ao centro */
+    text-align: center;
+    /* Define a imagem de fundo com um gradiente */
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    /* Define uma borda superior sólida azul claro com 1px de espessura e opacidade de 80% */
+    border-top: 1px solid #33A8DB80;
+}
+
+/* Estilos para a classe dio-logo dentro do elemento footer */
+footer .dio-logo {
+    /* Define a largura do elemento como 300px */
+    width: 300px;
+}
+
+/* Estilos para links dentro do elemento footer */
+footer a {
+    /* Define a cor da fonte como azul claro */
+    color: #33A8DB;
+    /* Define o peso da fonte como negrito */
+    font-weight: bold;
+    /* Remove a decoração de texto */
+    text-decoration: none;
+}
